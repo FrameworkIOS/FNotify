@@ -10,6 +10,7 @@
 		1856B3AE278B16DE00165AE5 /* FNotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1856B3A5278B16DE00165AE5 /* FNotify.framework */; };
 		1856B3B3278B16DE00165AE5 /* FNotifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856B3B2278B16DE00165AE5 /* FNotifyTests.swift */; };
 		1856B3B4278B16DE00165AE5 /* FNotify.h in Headers */ = {isa = PBXBuildFile; fileRef = 1856B3A8278B16DE00165AE5 /* FNotify.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1856B3BE278B186A00165AE5 /* FNotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856B3BD278B186A00165AE5 /* FNotify.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +28,7 @@
 		1856B3A8278B16DE00165AE5 /* FNotify.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FNotify.h; sourceTree = "<group>"; };
 		1856B3AD278B16DE00165AE5 /* FNotifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FNotifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1856B3B2278B16DE00165AE5 /* FNotifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNotifyTests.swift; sourceTree = "<group>"; };
+		1856B3BD278B186A00165AE5 /* FNotify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNotify.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				1856B3A8278B16DE00165AE5 /* FNotify.h */,
+				1856B3BD278B186A00165AE5 /* FNotify.swift */,
 			);
 			path = FNotify;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				TargetAttributes = {
 					1856B3A4278B16DE00165AE5 = {
 						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 					};
 					1856B3AC278B16DE00165AE5 = {
 						CreatedOnToolsVersion = 13.0;
@@ -191,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1856B3BE278B186A00165AE5 /* FNotify.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +343,7 @@
 		1856B3B8278B16DE00165AE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -357,6 +363,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +372,7 @@
 		1856B3B9278B16DE00165AE5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -392,6 +400,7 @@
 		1856B3BB278B16DE00165AE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -412,6 +421,7 @@
 		1856B3BC278B16DE00165AE5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
