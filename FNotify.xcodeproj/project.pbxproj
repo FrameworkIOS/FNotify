@@ -11,6 +11,7 @@
 		1856B3B3278B16DE00165AE5 /* FNotifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856B3B2278B16DE00165AE5 /* FNotifyTests.swift */; };
 		1856B3B4278B16DE00165AE5 /* FNotify.h in Headers */ = {isa = PBXBuildFile; fileRef = 1856B3A8278B16DE00165AE5 /* FNotify.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1856B3BE278B186A00165AE5 /* FNotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856B3BD278B186A00165AE5 /* FNotify.swift */; };
+		1856B3C0278B1AA300165AE5 /* FNMessageConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856B3BF278B1AA300165AE5 /* FNMessageConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		1856B3AD278B16DE00165AE5 /* FNotifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FNotifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1856B3B2278B16DE00165AE5 /* FNotifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNotifyTests.swift; sourceTree = "<group>"; };
 		1856B3BD278B186A00165AE5 /* FNotify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNotify.swift; sourceTree = "<group>"; };
+		1856B3BF278B1AA300165AE5 /* FNMessageConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNMessageConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				1856B3A8278B16DE00165AE5 /* FNotify.h */,
 				1856B3BD278B186A00165AE5 /* FNotify.swift */,
+				1856B3BF278B1AA300165AE5 /* FNMessageConfig.swift */,
 			);
 			path = FNotify;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1856B3BE278B186A00165AE5 /* FNotify.swift in Sources */,
+				1856B3C0278B1AA300165AE5 /* FNMessageConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

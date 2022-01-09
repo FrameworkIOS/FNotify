@@ -1,3 +1,10 @@
+//
+//  FNotify.swift
+//  FNotify
+//
+//  Created by Krisna Pranav on 09/01/22.
+//
+
 import UIKit
 
 public class FNotify: UIView {
