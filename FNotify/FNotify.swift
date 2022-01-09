@@ -12,5 +12,26 @@ public class FNotify: UIView {
         mainShape.shadowOpacity = 0.4
     }
     
+    public enum Status : CaseIterable {
+        case error
+        case info
+        case success
+    }
+    
+    public enum Position {
+        case top
+        case bottom
+    }
+    
+    public typealias FNcompleteHandler = (FNotify) -> Void
+    
+    private var topConstrait : NSLayoutConstraint?
+    private var bottomConstrait : NSLayoutConstraint?
+    
+    private var message = UILabel()
+    private var title = UILabel()
+    private var action : FNcompleteHandler? = nil
+    private var mainView = UIView()
     private var mainShape = CAShapeLayer()
+    private var duration : Double?
 }
