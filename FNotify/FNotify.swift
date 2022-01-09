@@ -79,6 +79,7 @@ public class FNotify: UIView {
         self.init(title: attrTitle, message: attrMessage, duration: duration, position: position, status: status, config: config)
     }
     
+    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -154,6 +155,121 @@ public class FNotify: UIView {
         }
     }
     
+    @discardableResult public func show() -> FNotify {
+        
+        for vim in UIApplication.shared.keyWindow!.subviews {
+            if let msg = vim as? FNotify {
+                msg.hideMessages()
+            }
+        }
+        
+        UIApplication.shared.keyWindow?.addSubview(self)
+        topConstraint = topAnchor.constraint(equalTo: superview!.topAnchor, constant: UIApplication.shared.statusBarFrame.maxY + 16)
+        centerXAnchor.constraint(equalTo: superview!.centerXAnchor, constant: 0).isActive = true
+        
+        if #available(iOS 11.0, *) {
+            bottomConstraint = bottomAnchor.constraint(equalTo: superview!.safeAreaLayoutGuide.bottomAnchor, constant: -16)
+        } else {
+            bottomConstraint = bottomAnchor.constraint(equalTo: superview!.bottomAnchor, constant: -16)
+        }
+        
+        if position == .top {
+            bottomConstraint?.isActive = false
+            topConstraint?.isActive = true
+        }
+        else{
+            topConstraint?.isActive = false
+            bottomConstraint?.isActive = true
+        }
+        
+        self.alpha = 0.1
+        self.transform = CGAffineTransform(scaleX: 3, y: 3)
+        UIView.animate(withDuration: 0.3, delay: 0.0, options: .curveEaseInOut, animations: {
+            self.alpha = 1
+            self.transform = .identity
+        }) { (B) in
+            UIView.animate(withDuration: 0.2, delay: 0.0, options: [.curveEaseInOut,.beginFromCurrentState], animations: {
+                self.transform = CGAffineTransform(scaleX: 1.05, y: 1.05)
+            }, completion: { (B) in
+                UIView.animate(withDuration: 0.2, animations: {
+                    self.transform = .identity
+                })
+            })
+        }
+        
+        return self
+    }
+    
+    
+    @objc public func hideMessages(){
+        
+        UIView.transition(with: self, duration: 0.3, options: [.transitionCrossDissolve ,.curveEaseInOut,.beginFromCurrentState]
+            , animations: {
+                self.alpha = 0
+                self.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
+        }) { (B) in
+            self.removeFromSuperview()
+            self.action?(self)
+        }
+        
+    }
+    
+    @objc func onMoving(pan: UIPanGestureRecognizer){
+        let point = pan.translation(in: UIApplication.shared.keyWindow!)
+        if pan.state == .began {
+            timer?.invalidate()
+        }else if pan.state == .changed {
+            let alpha = min(1 - (abs(point.x)/150.0),1 - (abs(point.y)/150.0))
+            
+            self.alpha = alpha
+            self.transform = CGAffineTransform(translationX: point.x, y: point.y)
+            if alpha <= 0 {
+                self.removeFromSuperview()
+            }
+            
+        }else if pan.state == .ended {
+            self.alpha = 1
+            UIView.animate(withDuration: 0.4, animations: {
+                self.transform = .identity
+            })
+            
+            if let duration = duration {
+                timer = Timer.scheduledTimer(timeInterval: duration, target: self, selector: #selector(self.hideMessages), userInfo: nil, repeats: false)
+            }
+        }
+    }
+    
+    @available(swift,deprecated: 1.1.0,message: "change to onDismiss")
+    public func onHide(_ sender : @escaping FNcompleteHandler){
+        action = sender
+    }
+    
+    public func onDismiss(_ sender : @escaping FNcompleteHandler) {
+        action = sender
+    }
+    
+    @discardableResult public static func show(title : String,message : String,duration: Double? = 3.0 , position: Position = .top,status : Status = .success ,config:FNMessageConfig = FNMessageConfig.shared) -> FNotify {
+        let attrTitle = NSAttributedString(string: title, attributes: [.font:config.titleFont,.foregroundColor:config.titleColor])
+        
+        let attrMessage = NSAttributedString(string: message, attributes: [.font:config.messageFont,.foregroundColor:config.messageColor])
+        
+        let msg = FNotify(title: attrTitle, message: attrMessage, duration: duration, position: position, status: status, config:config)
+        msg.show()
+        return msg
+    }
+    
+    @discardableResult public static func show(title : NSAttributedString,message : NSAttributedString,duration: Double? = 3.0 , position: Position = .top,status : Status = .success) -> FNotify {
+        let msg = FNotify(title: title, message: message, duration: duration, position: position, status: status, config:FNMessageConfig.shared)
+        msg.show()
+        return msg
+    }
+    
+    public static func hide(){
+        for vim in UIApplication.shared.keyWindow!.subviews {
+            if let msg = vim as? FNotify {
+                msg.hideMessages()
+            }
+        }
+    }
+    
 }
-
-
