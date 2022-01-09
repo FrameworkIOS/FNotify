@@ -45,7 +45,7 @@ public class FNotify: UIView {
     private var iconView : UIImageView!
     private var timer : Timer? = nil
     private(set) var status : Status = .error
-//    private(set) var config : FNMessageConfig!
+    private(set) var config : FNMessageConfig!
     
     public init(title : NSAttributedString,
                 message : NSAttributedString,
@@ -65,4 +65,20 @@ public class FNotify: UIView {
         self.position = position
         setup()
     }
+    
+    public convenience init(title : String,
+                            message : String,
+                            duration: Double? = 3.0,
+                            position: Position = .top,
+                            status : Status = .success,
+                            config:FNMessageConfig = FNMessageConfig.shared) {
+        
+        let attrTitle = NSAttributedString(string: title, attributes: [.font:config.titleFont,.foregroundColor:config.titleColor])
+        
+        let attrMessage = NSAttributedString(string: message, attributes: [.font:config.messageFont,.foregroundColor:config.messageColor])
+        self.init(title: attrTitle, message: attrMessage, duration: duration, position: position, status: status, config: config)
+    }
+    
 }
+
+
