@@ -7,76 +7,130 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1856B3CE278B1E3C00165AE5 /* FNotifyExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856B3CD278B1E3C00165AE5 /* FNotifyExampleApp.swift */; };
-		1856B3D0278B1E3C00165AE5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856B3CF278B1E3C00165AE5 /* ContentView.swift */; };
-		1856B3D2278B1E4200165AE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1856B3D1278B1E4200165AE5 /* Assets.xcassets */; };
-		1856B3D5278B1E4200165AE5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1856B3D4278B1E4200165AE5 /* Preview Assets.xcassets */; };
+		1856B3F6278B21B800165AE5 /* FNotifyExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856B3F5278B21B800165AE5 /* FNotifyExampleApp.swift */; };
+		1856B3F8278B21B800165AE5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856B3F7278B21B800165AE5 /* ContentView.swift */; };
+		1856B3FA278B21C000165AE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1856B3F9278B21C000165AE5 /* Assets.xcassets */; };
+		1856B3FD278B21C000165AE5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1856B3FC278B21C000165AE5 /* Preview Assets.xcassets */; };
+		1856B40D278B21D500165AE5 /* FNotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1856B409278B21CE00165AE5 /* FNotify.framework */; };
+		1856B40E278B21D500165AE5 /* FNotify.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1856B409278B21CE00165AE5 /* FNotify.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1856B408278B21CE00165AE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1856B403278B21CE00165AE5 /* FNotify.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1856B3A5278B16DE00165AE5;
+			remoteInfo = FNotify;
+		};
+		1856B40A278B21CE00165AE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1856B403278B21CE00165AE5 /* FNotify.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1856B3AD278B16DE00165AE5;
+			remoteInfo = FNotifyTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1856B40F278B21D500165AE5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1856B40E278B21D500165AE5 /* FNotify.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		1856B3CA278B1E3C00165AE5 /* FNotifyExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FNotifyExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1856B3CD278B1E3C00165AE5 /* FNotifyExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNotifyExampleApp.swift; sourceTree = "<group>"; };
-		1856B3CF278B1E3C00165AE5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		1856B3D1278B1E4200165AE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1856B3D4278B1E4200165AE5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1856B3F2278B21B800165AE5 /* FNotifyExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FNotifyExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1856B3F5278B21B800165AE5 /* FNotifyExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNotifyExampleApp.swift; sourceTree = "<group>"; };
+		1856B3F7278B21B800165AE5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1856B3F9278B21C000165AE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1856B3FC278B21C000165AE5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1856B403278B21CE00165AE5 /* FNotify.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FNotify.xcodeproj; path = ../../FNotify.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1856B3C7278B1E3C00165AE5 /* Frameworks */ = {
+		1856B3EF278B21B800165AE5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1856B40D278B21D500165AE5 /* FNotify.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1856B3C1278B1E3C00165AE5 = {
+		1856B3E9278B21B800165AE5 = {
 			isa = PBXGroup;
 			children = (
-				1856B3CC278B1E3C00165AE5 /* FNotifyExample */,
-				1856B3CB278B1E3C00165AE5 /* Products */,
+				1856B403278B21CE00165AE5 /* FNotify.xcodeproj */,
+				1856B3F4278B21B800165AE5 /* FNotifyExample */,
+				1856B3F3278B21B800165AE5 /* Products */,
+				1856B40C278B21D500165AE5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		1856B3CB278B1E3C00165AE5 /* Products */ = {
+		1856B3F3278B21B800165AE5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1856B3CA278B1E3C00165AE5 /* FNotifyExample.app */,
+				1856B3F2278B21B800165AE5 /* FNotifyExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1856B3CC278B1E3C00165AE5 /* FNotifyExample */ = {
+		1856B3F4278B21B800165AE5 /* FNotifyExample */ = {
 			isa = PBXGroup;
 			children = (
-				1856B3CD278B1E3C00165AE5 /* FNotifyExampleApp.swift */,
-				1856B3CF278B1E3C00165AE5 /* ContentView.swift */,
-				1856B3D1278B1E4200165AE5 /* Assets.xcassets */,
-				1856B3D3278B1E4200165AE5 /* Preview Content */,
+				1856B3F5278B21B800165AE5 /* FNotifyExampleApp.swift */,
+				1856B3F7278B21B800165AE5 /* ContentView.swift */,
+				1856B3F9278B21C000165AE5 /* Assets.xcassets */,
+				1856B3FB278B21C000165AE5 /* Preview Content */,
 			);
 			path = FNotifyExample;
 			sourceTree = "<group>";
 		};
-		1856B3D3278B1E4200165AE5 /* Preview Content */ = {
+		1856B3FB278B21C000165AE5 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				1856B3D4278B1E4200165AE5 /* Preview Assets.xcassets */,
+				1856B3FC278B21C000165AE5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1856B404278B21CE00165AE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1856B409278B21CE00165AE5 /* FNotify.framework */,
+				1856B40B278B21CE00165AE5 /* FNotifyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1856B40C278B21D500165AE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1856B3C9278B1E3C00165AE5 /* FNotifyExample */ = {
+		1856B3F1278B21B800165AE5 /* FNotifyExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1856B3D8278B1E4200165AE5 /* Build configuration list for PBXNativeTarget "FNotifyExample" */;
+			buildConfigurationList = 1856B400278B21C000165AE5 /* Build configuration list for PBXNativeTarget "FNotifyExample" */;
 			buildPhases = (
-				1856B3C6278B1E3C00165AE5 /* Sources */,
-				1856B3C7278B1E3C00165AE5 /* Frameworks */,
-				1856B3C8278B1E3C00165AE5 /* Resources */,
+				1856B3EE278B21B800165AE5 /* Sources */,
+				1856B3EF278B21B800165AE5 /* Frameworks */,
+				1856B3F0278B21B800165AE5 /* Resources */,
+				1856B40F278B21D500165AE5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -84,25 +138,25 @@
 			);
 			name = FNotifyExample;
 			productName = FNotifyExample;
-			productReference = 1856B3CA278B1E3C00165AE5 /* FNotifyExample.app */;
+			productReference = 1856B3F2278B21B800165AE5 /* FNotifyExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1856B3C2278B1E3C00165AE5 /* Project object */ = {
+		1856B3EA278B21B800165AE5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
-					1856B3C9278B1E3C00165AE5 = {
+					1856B3F1278B21B800165AE5 = {
 						CreatedOnToolsVersion = 13.0;
 					};
 				};
 			};
-			buildConfigurationList = 1856B3C5278B1E3C00165AE5 /* Build configuration list for PBXProject "FNotifyExample" */;
+			buildConfigurationList = 1856B3ED278B21B800165AE5 /* Build configuration list for PBXProject "FNotifyExample" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,42 +164,65 @@
 				en,
 				Base,
 			);
-			mainGroup = 1856B3C1278B1E3C00165AE5;
-			productRefGroup = 1856B3CB278B1E3C00165AE5 /* Products */;
+			mainGroup = 1856B3E9278B21B800165AE5;
+			productRefGroup = 1856B3F3278B21B800165AE5 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1856B404278B21CE00165AE5 /* Products */;
+					ProjectRef = 1856B403278B21CE00165AE5 /* FNotify.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
-				1856B3C9278B1E3C00165AE5 /* FNotifyExample */,
+				1856B3F1278B21B800165AE5 /* FNotifyExample */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		1856B409278B21CE00165AE5 /* FNotify.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FNotify.framework;
+			remoteRef = 1856B408278B21CE00165AE5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1856B40B278B21CE00165AE5 /* FNotifyTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = FNotifyTests.xctest;
+			remoteRef = 1856B40A278B21CE00165AE5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
-		1856B3C8278B1E3C00165AE5 /* Resources */ = {
+		1856B3F0278B21B800165AE5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1856B3D5278B1E4200165AE5 /* Preview Assets.xcassets in Resources */,
-				1856B3D2278B1E4200165AE5 /* Assets.xcassets in Resources */,
+				1856B3FD278B21C000165AE5 /* Preview Assets.xcassets in Resources */,
+				1856B3FA278B21C000165AE5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1856B3C6278B1E3C00165AE5 /* Sources */ = {
+		1856B3EE278B21B800165AE5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1856B3D0278B1E3C00165AE5 /* ContentView.swift in Sources */,
-				1856B3CE278B1E3C00165AE5 /* FNotifyExampleApp.swift in Sources */,
+				1856B3F8278B21B800165AE5 /* ContentView.swift in Sources */,
+				1856B3F6278B21B800165AE5 /* FNotifyExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		1856B3D6278B1E4200165AE5 /* Debug */ = {
+		1856B3FE278B21C000165AE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -206,7 +283,7 @@
 			};
 			name = Debug;
 		};
-		1856B3D7278B1E4200165AE5 /* Release */ = {
+		1856B3FF278B21C000165AE5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -261,7 +338,7 @@
 			};
 			name = Release;
 		};
-		1856B3D9278B1E4200165AE5 /* Debug */ = {
+		1856B401278B21C000165AE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -290,7 +367,7 @@
 			};
 			name = Debug;
 		};
-		1856B3DA278B1E4200165AE5 /* Release */ = {
+		1856B402278B21C000165AE5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -322,25 +399,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1856B3C5278B1E3C00165AE5 /* Build configuration list for PBXProject "FNotifyExample" */ = {
+		1856B3ED278B21B800165AE5 /* Build configuration list for PBXProject "FNotifyExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1856B3D6278B1E4200165AE5 /* Debug */,
-				1856B3D7278B1E4200165AE5 /* Release */,
+				1856B3FE278B21C000165AE5 /* Debug */,
+				1856B3FF278B21C000165AE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1856B3D8278B1E4200165AE5 /* Build configuration list for PBXNativeTarget "FNotifyExample" */ = {
+		1856B400278B21C000165AE5 /* Build configuration list for PBXNativeTarget "FNotifyExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1856B3D9278B1E4200165AE5 /* Debug */,
-				1856B3DA278B1E4200165AE5 /* Release */,
+				1856B401278B21C000165AE5 /* Debug */,
+				1856B402278B21C000165AE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 1856B3C2278B1E3C00165AE5 /* Project object */;
+	rootObject = 1856B3EA278B21B800165AE5 /* Project object */;
 }
