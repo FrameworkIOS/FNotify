@@ -7,25 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1856B3F6278B21B800165AE5 /* FNotifyExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856B3F5278B21B800165AE5 /* FNotifyExampleApp.swift */; };
-		1856B3F8278B21B800165AE5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856B3F7278B21B800165AE5 /* ContentView.swift */; };
-		1856B3FA278B21C000165AE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1856B3F9278B21C000165AE5 /* Assets.xcassets */; };
-		1856B3FD278B21C000165AE5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1856B3FC278B21C000165AE5 /* Preview Assets.xcassets */; };
-		1856B40D278B21D500165AE5 /* FNotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1856B409278B21CE00165AE5 /* FNotify.framework */; };
-		1856B40E278B21D500165AE5 /* FNotify.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1856B409278B21CE00165AE5 /* FNotify.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1856B41D278B238A00165AE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856B41C278B238A00165AE5 /* AppDelegate.swift */; };
+		1856B41F278B238A00165AE5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856B41E278B238A00165AE5 /* SceneDelegate.swift */; };
+		1856B421278B238A00165AE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856B420278B238A00165AE5 /* ViewController.swift */; };
+		1856B424278B238A00165AE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1856B422278B238A00165AE5 /* Main.storyboard */; };
+		1856B426278B238D00165AE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1856B425278B238D00165AE5 /* Assets.xcassets */; };
+		1856B429278B238D00165AE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1856B427278B238D00165AE5 /* LaunchScreen.storyboard */; };
+		1856B43A278B23C600165AE5 /* FNotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1856B436278B23BC00165AE5 /* FNotify.framework */; };
+		1856B43B278B23C600165AE5 /* FNotify.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1856B436278B23BC00165AE5 /* FNotify.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1856B408278B21CE00165AE5 /* PBXContainerItemProxy */ = {
+		1856B435278B23BC00165AE5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1856B403278B21CE00165AE5 /* FNotify.xcodeproj */;
+			containerPortal = 1856B430278B23BC00165AE5 /* FNotify.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 1856B3A5278B16DE00165AE5;
 			remoteInfo = FNotify;
 		};
-		1856B40A278B21CE00165AE5 /* PBXContainerItemProxy */ = {
+		1856B437278B23BC00165AE5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1856B403278B21CE00165AE5 /* FNotify.xcodeproj */;
+			containerPortal = 1856B430278B23BC00165AE5 /* FNotify.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 1856B3AD278B16DE00165AE5;
 			remoteInfo = FNotifyTests;
@@ -33,13 +35,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		1856B40F278B21D500165AE5 /* Embed Frameworks */ = {
+		1856B43C278B23C600165AE5 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1856B40E278B21D500165AE5 /* FNotify.framework in Embed Frameworks */,
+				1856B43B278B23C600165AE5 /* FNotify.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,73 +49,71 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1856B3F2278B21B800165AE5 /* FNotifyExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FNotifyExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1856B3F5278B21B800165AE5 /* FNotifyExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNotifyExampleApp.swift; sourceTree = "<group>"; };
-		1856B3F7278B21B800165AE5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		1856B3F9278B21C000165AE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1856B3FC278B21C000165AE5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		1856B403278B21CE00165AE5 /* FNotify.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FNotify.xcodeproj; path = ../../FNotify.xcodeproj; sourceTree = "<group>"; };
+		1856B419278B238A00165AE5 /* FNotifyExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FNotifyExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1856B41C278B238A00165AE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1856B41E278B238A00165AE5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1856B420278B238A00165AE5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1856B423278B238A00165AE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1856B425278B238D00165AE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1856B428278B238D00165AE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1856B42A278B238D00165AE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1856B430278B23BC00165AE5 /* FNotify.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FNotify.xcodeproj; path = ../../FNotify.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1856B3EF278B21B800165AE5 /* Frameworks */ = {
+		1856B416278B238A00165AE5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1856B40D278B21D500165AE5 /* FNotify.framework in Frameworks */,
+				1856B43A278B23C600165AE5 /* FNotify.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1856B3E9278B21B800165AE5 = {
+		1856B410278B238A00165AE5 = {
 			isa = PBXGroup;
 			children = (
-				1856B403278B21CE00165AE5 /* FNotify.xcodeproj */,
-				1856B3F4278B21B800165AE5 /* FNotifyExample */,
-				1856B3F3278B21B800165AE5 /* Products */,
-				1856B40C278B21D500165AE5 /* Frameworks */,
+				1856B430278B23BC00165AE5 /* FNotify.xcodeproj */,
+				1856B41B278B238A00165AE5 /* FNotifyExample */,
+				1856B41A278B238A00165AE5 /* Products */,
+				1856B439278B23C600165AE5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		1856B3F3278B21B800165AE5 /* Products */ = {
+		1856B41A278B238A00165AE5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1856B3F2278B21B800165AE5 /* FNotifyExample.app */,
+				1856B419278B238A00165AE5 /* FNotifyExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1856B3F4278B21B800165AE5 /* FNotifyExample */ = {
+		1856B41B278B238A00165AE5 /* FNotifyExample */ = {
 			isa = PBXGroup;
 			children = (
-				1856B3F5278B21B800165AE5 /* FNotifyExampleApp.swift */,
-				1856B3F7278B21B800165AE5 /* ContentView.swift */,
-				1856B3F9278B21C000165AE5 /* Assets.xcassets */,
-				1856B3FB278B21C000165AE5 /* Preview Content */,
+				1856B41C278B238A00165AE5 /* AppDelegate.swift */,
+				1856B41E278B238A00165AE5 /* SceneDelegate.swift */,
+				1856B420278B238A00165AE5 /* ViewController.swift */,
+				1856B422278B238A00165AE5 /* Main.storyboard */,
+				1856B425278B238D00165AE5 /* Assets.xcassets */,
+				1856B427278B238D00165AE5 /* LaunchScreen.storyboard */,
+				1856B42A278B238D00165AE5 /* Info.plist */,
 			);
 			path = FNotifyExample;
 			sourceTree = "<group>";
 		};
-		1856B3FB278B21C000165AE5 /* Preview Content */ = {
+		1856B431278B23BC00165AE5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1856B3FC278B21C000165AE5 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		1856B404278B21CE00165AE5 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1856B409278B21CE00165AE5 /* FNotify.framework */,
-				1856B40B278B21CE00165AE5 /* FNotifyTests.xctest */,
+				1856B436278B23BC00165AE5 /* FNotify.framework */,
+				1856B438278B23BC00165AE5 /* FNotifyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1856B40C278B21D500165AE5 /* Frameworks */ = {
+		1856B439278B23C600165AE5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -123,14 +123,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1856B3F1278B21B800165AE5 /* FNotifyExample */ = {
+		1856B418278B238A00165AE5 /* FNotifyExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1856B400278B21C000165AE5 /* Build configuration list for PBXNativeTarget "FNotifyExample" */;
+			buildConfigurationList = 1856B42D278B238D00165AE5 /* Build configuration list for PBXNativeTarget "FNotifyExample" */;
 			buildPhases = (
-				1856B3EE278B21B800165AE5 /* Sources */,
-				1856B3EF278B21B800165AE5 /* Frameworks */,
-				1856B3F0278B21B800165AE5 /* Resources */,
-				1856B40F278B21D500165AE5 /* Embed Frameworks */,
+				1856B415278B238A00165AE5 /* Sources */,
+				1856B416278B238A00165AE5 /* Frameworks */,
+				1856B417278B238A00165AE5 /* Resources */,
+				1856B43C278B23C600165AE5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -138,25 +138,25 @@
 			);
 			name = FNotifyExample;
 			productName = FNotifyExample;
-			productReference = 1856B3F2278B21B800165AE5 /* FNotifyExample.app */;
+			productReference = 1856B419278B238A00165AE5 /* FNotifyExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1856B3EA278B21B800165AE5 /* Project object */ = {
+		1856B411278B238A00165AE5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
-					1856B3F1278B21B800165AE5 = {
+					1856B418278B238A00165AE5 = {
 						CreatedOnToolsVersion = 13.0;
 					};
 				};
 			};
-			buildConfigurationList = 1856B3ED278B21B800165AE5 /* Build configuration list for PBXProject "FNotifyExample" */;
+			buildConfigurationList = 1856B414278B238A00165AE5 /* Build configuration list for PBXProject "FNotifyExample" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -164,65 +164,86 @@
 				en,
 				Base,
 			);
-			mainGroup = 1856B3E9278B21B800165AE5;
-			productRefGroup = 1856B3F3278B21B800165AE5 /* Products */;
+			mainGroup = 1856B410278B238A00165AE5;
+			productRefGroup = 1856B41A278B238A00165AE5 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 1856B404278B21CE00165AE5 /* Products */;
-					ProjectRef = 1856B403278B21CE00165AE5 /* FNotify.xcodeproj */;
+					ProductGroup = 1856B431278B23BC00165AE5 /* Products */;
+					ProjectRef = 1856B430278B23BC00165AE5 /* FNotify.xcodeproj */;
 				},
 			);
 			projectRoot = "";
 			targets = (
-				1856B3F1278B21B800165AE5 /* FNotifyExample */,
+				1856B418278B238A00165AE5 /* FNotifyExample */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		1856B409278B21CE00165AE5 /* FNotify.framework */ = {
+		1856B436278B23BC00165AE5 /* FNotify.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = FNotify.framework;
-			remoteRef = 1856B408278B21CE00165AE5 /* PBXContainerItemProxy */;
+			remoteRef = 1856B435278B23BC00165AE5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		1856B40B278B21CE00165AE5 /* FNotifyTests.xctest */ = {
+		1856B438278B23BC00165AE5 /* FNotifyTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = FNotifyTests.xctest;
-			remoteRef = 1856B40A278B21CE00165AE5 /* PBXContainerItemProxy */;
+			remoteRef = 1856B437278B23BC00165AE5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1856B3F0278B21B800165AE5 /* Resources */ = {
+		1856B417278B238A00165AE5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1856B3FD278B21C000165AE5 /* Preview Assets.xcassets in Resources */,
-				1856B3FA278B21C000165AE5 /* Assets.xcassets in Resources */,
+				1856B429278B238D00165AE5 /* LaunchScreen.storyboard in Resources */,
+				1856B426278B238D00165AE5 /* Assets.xcassets in Resources */,
+				1856B424278B238A00165AE5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1856B3EE278B21B800165AE5 /* Sources */ = {
+		1856B415278B238A00165AE5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1856B3F8278B21B800165AE5 /* ContentView.swift in Sources */,
-				1856B3F6278B21B800165AE5 /* FNotifyExampleApp.swift in Sources */,
+				1856B421278B238A00165AE5 /* ViewController.swift in Sources */,
+				1856B41D278B238A00165AE5 /* AppDelegate.swift in Sources */,
+				1856B41F278B238A00165AE5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		1856B422278B238A00165AE5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1856B423278B238A00165AE5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1856B427278B238D00165AE5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1856B428278B238D00165AE5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		1856B3FE278B21C000165AE5 /* Debug */ = {
+		1856B42B278B238D00165AE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -283,7 +304,7 @@
 			};
 			name = Debug;
 		};
-		1856B3FF278B21C000165AE5 /* Release */ = {
+		1856B42C278B238D00165AE5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -338,22 +359,20 @@
 			};
 			name = Release;
 		};
-		1856B401278B21C000165AE5 /* Debug */ = {
+		1856B42E278B238D00165AE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FNotifyExample/Preview Content\"";
-				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = FNotifyExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -367,22 +386,20 @@
 			};
 			name = Debug;
 		};
-		1856B402278B21C000165AE5 /* Release */ = {
+		1856B42F278B238D00165AE5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FNotifyExample/Preview Content\"";
-				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = FNotifyExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -399,25 +416,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1856B3ED278B21B800165AE5 /* Build configuration list for PBXProject "FNotifyExample" */ = {
+		1856B414278B238A00165AE5 /* Build configuration list for PBXProject "FNotifyExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1856B3FE278B21C000165AE5 /* Debug */,
-				1856B3FF278B21C000165AE5 /* Release */,
+				1856B42B278B238D00165AE5 /* Debug */,
+				1856B42C278B238D00165AE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1856B400278B21C000165AE5 /* Build configuration list for PBXNativeTarget "FNotifyExample" */ = {
+		1856B42D278B238D00165AE5 /* Build configuration list for PBXNativeTarget "FNotifyExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1856B401278B21C000165AE5 /* Debug */,
-				1856B402278B21C000165AE5 /* Release */,
+				1856B42E278B238D00165AE5 /* Debug */,
+				1856B42F278B238D00165AE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 1856B3EA278B21B800165AE5 /* Project object */;
+	rootObject = 1856B411278B238A00165AE5 /* Project object */;
 }
