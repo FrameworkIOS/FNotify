@@ -38,5 +38,24 @@ public class FNotify: UIView {
     private var iconView : UIImageView!
     private var timer : Timer? = nil
     private(set) var status : Status = .error
-    private(set) var config : FNMessageConfig!
+//    private(set) var config : FNMessageConfig!
+    
+    public init(title : NSAttributedString,
+                message : NSAttributedString,
+                duration: Double? = 3.0,
+                position: Position = .top,
+                status : Status = .success,
+                config:FNMessageConfig = FNMessageConfig.shared) {
+        
+        super.init(frame: .zero)
+        translatesAutoresizingMaskIntoConstraints = false
+        
+        self.config = config
+        self.title.attributedText = title
+        self.message.attributedText = message
+        self.status = status
+        self.duration = duration
+        self.position = position
+        setup()
+    }
 }
