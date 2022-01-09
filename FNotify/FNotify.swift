@@ -25,8 +25,8 @@ public class FNotify: UIView {
     
     public typealias FNcompleteHandler = (FNotify) -> Void
     
-    private var topConstrait : NSLayoutConstraint?
-    private var bottomConstrait : NSLayoutConstraint?
+    private var topConstraint : NSLayoutConstraint?
+    private var bottomConstraint : NSLayoutConstraint?
     
     private var message = UILabel()
     private var title = UILabel()
@@ -34,4 +34,9 @@ public class FNotify: UIView {
     private var mainView = UIView()
     private var mainShape = CAShapeLayer()
     private var duration : Double?
+    private var position : Position = .top
+    private var iconView : UIImageView!
+    private var timer : Timer? = nil
+    private(set) var status : Status = .error
+    private(set) var config : FNMessageConfig!
 }
