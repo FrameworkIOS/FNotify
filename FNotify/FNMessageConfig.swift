@@ -12,7 +12,8 @@ public struct FNMessageConfig {
     
     public var titleFont : UIFont = UIFont.boldSystemFont(ofSize: 15)
     public var titleColor : UIColor = .white
-    public messageColor = UIColor = .white
+    public var messageColor : UIColor = .white
+    
     public var messageFont : UIFont = UIFont.systemFont(ofSize: 14)
     
 }
