@@ -1,7 +1,8 @@
 # FNotify
 Notification Library For IOS
 
-![FNotify](https://github.com/FrameworkIOS/FNotify/blob/master/video/FNotify.mov)
+https://user-images.githubusercontent.com/68631244/148686574-d151bf65-a3d4-4bc5-8c05-933f370e9b1a.mov
+
 
 
 ## Requirements:
